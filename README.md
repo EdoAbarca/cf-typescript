@@ -5,7 +5,8 @@ Este repositorio contiene mis apuntes del "Curso Profesional de TypeScript" prop
 
 ## Contenido
 
-| Módulos                                           | Descripción                                       |
-|---------------------------------------------------|---------------------------------------------------|
-| [Módulo 1](./modulo1/modulo1.md)                 | Introducción e instalación TypeScript             |
+| Módulos                          | Descripción                                       |
+|----------------------------------|---------------------------------------------------|
+| [Módulo 1](./modulo1/modulo1.md) | Introducción e instalación TypeScript             |
+| [Módulo 2](./modulo2/modulo2.md) | Tipos de datos y validación                       |
 
