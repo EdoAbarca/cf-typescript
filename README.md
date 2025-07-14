@@ -11,4 +11,5 @@ Este repositorio contiene mis apuntes del "Curso Profesional de TypeScript" prop
 | [Módulo 2](./modulo2/modulo2.md) | Tipos de datos, datos combinados y *type assertion* |
 | [Módulo 3](./modulo3/modulo3.md) | Enum, Interface y Custom Types                      |
 | [Módulo 4](./modulo4/modulo4.md) | Class, Interface y funciones                        |
+| [Módulo 5](./modulo5/modulo5.md) | Namespace y módulos                                 |
 
