@@ -71,3 +71,54 @@ type ReadonlyUserProfile = {
 
 //TODO: Hacer ejemplo CRUD con mappedTypes y generics
 ```
+
+# Clase 3
+
+Los Utility Types son un conjunto de tipos predefinidos y genéricos que TypeScript proporciona globalmente para facilitar las operaciones de transformación de tipos comunes. Son esencialmente Mapped Types y otras construcciones de tipos que ya están implementadas para ti, listas para usar.
+
+> TypeScript tiene documentación de utilitarios listos para usar.
+
+```typescript
+interface Product {
+    id: number;
+    name: string;
+    price: number;
+    description: string;
+}
+
+// Usando Pick para crear un tipo con solo 'id' y 'name'
+type ProductSummary = Pick<Product, 'id' | 'name'>;
+/*
+// ProductSummary será equivalente a:
+type ProductSummary = {
+    id: number;
+    name: string;
+};
+*/
+
+// Usando Omit para crear un tipo sin 'description'
+type ProductWithoutDescription = Omit<Product, 'description'>;
+/*
+// ProductWithoutDescription será equivalente a:
+type ProductWithoutDescription = {
+    id: number;
+    name: string;
+    price: number;
+};
+*/
+
+// Usando Record para un diccionario de usuarios
+type UserStatus = 'active' | 'inactive' | 'pending';
+type UserDictionary = Record<string, UserStatus>; // Claves string, valores UserStatus
+/*
+// UserDictionary podría ser algo como:
+const users: UserDictionary = {
+    "john.doe": "active",
+    "jane.smith": "pending",
+};
+*/
+
+// Usando NonNullable
+type MaybeString = string | null | undefined;
+type SureString = NonNullable<MaybeString>; // sureString será de tipo string
+```
