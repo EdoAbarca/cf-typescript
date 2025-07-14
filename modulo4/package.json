@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:classes": "tsc basics/index.ts --outdir dist/ && node dist/index.js"
+    "start:classes": "tsc basics/classes.ts --outdir dist/ && node dist/classes.js"
   },
   "keywords": [],
   "author": "",

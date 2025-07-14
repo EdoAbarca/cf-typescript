@@ -56,4 +56,34 @@ myDog.cry(); // Output: Galaxy Annihilator makes a sound.\n*barking sounds*
 
 ## Clase 2
 
+Class vs Interface
+
+Las clases pueden usar interfaces para definir el contrato de su estructura para su posterior implementación. Sin embargo, las interfaces no pueden implementar métodos ni inicializar variables: sólo pueden definirlos.
+
+Por ejemplo:
+
+```typescript
+interface IAnimal {
+	name: string;
+	cry(): void;
+}
+
+class Cat implements IAnimal {
+	name: string;
+
+	constructor(name: string) {
+		this.name = name;
+	}
+
+	cry() {
+		console.log(`${this.name} meows.`);
+	}
+}
+
+const myCat = new Cat("Whiskers"); //New es un método propio de las clases
+myCat.cry(); // Whiskers meows.
+```
+
+
 ## Clase 3
+
