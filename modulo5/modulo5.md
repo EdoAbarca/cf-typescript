@@ -24,3 +24,16 @@ const myOtherUser = new DBEntity.User("Jane Doe");
 console.log(myOtherUser.name); // Output: Jane Doe
 ```
 
+## Clase 2
+
+Un módulo es un archivo que contiene código y declaraciones (como clases, funciones, interfaces, variables, etc.) que pueden ser importadas y usadas en otros archivos o módulos. Los módulos ayudan a organizar el código en unidades lógicas y reutilizables, mejorando la mantenibilidad y la escalabilidad de las aplicaciones.
+
+```typescript
+//utils.module.ts
+export const PI = 3.14;
+
+//index.ts
+import { PI } from "./utils.module";
+
+const myNumber = 10 * PI;
+```

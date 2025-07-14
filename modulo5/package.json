@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:classes": "tsc advanced/namespaces/namespaces.ts advanced/namespaces/index.ts --outfile dist/namespaces.js && node dist/namespaces.js"
+    "start:classes": "tsc advanced/namespaces/namespaces.ts advanced/namespaces/index.ts --outfile dist/namespaces.js && node dist/namespaces.js",
+    "start:modules": "tsc advanced/modules/index.ts --outdir dist/modules.js && node dist/modules.js"
   },
   "keywords": [],
   "author": "",
