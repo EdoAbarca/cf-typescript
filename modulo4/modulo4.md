@@ -2,23 +2,25 @@
 
 ## Clase 1
 
-Una clase es un tipo de dato que funciona como un contrato para modelar tipos de datos personalizados. A diferencia de las interfaces, una clase por si sola si puede tener lógica dentro de su contrato.
+### Clases en TypeScript
+
+Una **clase** es una estructura que permite modelar tipos de datos personalizados, incluyendo lógica interna y encapsulación. A diferencia de las interfaces, las clases pueden contener implementaciones de métodos y gestionar el estado de sus propiedades.
 
 ```typescript
 class Animal {
-  private name: string;
+	private name: string;
 
-  setName(name: string) {
-    this.name = name;
-  }
+	setName(name: string) {
+		this.name = name;
+	}
 
-  getName() {
-    return this.name;
-  }
+	getName() {
+		return this.name;
+	}
 
-  cry() {
-    console.log(`${this.name} makes a sound.`);
-  }
+	cry() {
+		console.log(`${this.name} makes a sound.`);
+	}
 }
 
 const dog = new Animal();
@@ -26,41 +28,39 @@ dog.setName("Dog");
 dog.cry(); // Output: Dog makes a sound.
 ```
 
-Por otro lado, se pueden tomar las clases para extender su comportamiento:
+#### Herencia
+
+Las clases pueden extender otras clases para reutilizar y especializar su comportamiento. Esto se logra mediante la herencia:
 
 ```typescript
-//inheritance
 class Dog extends Animal {
-  constructor() {
-    super();
-  }
-  setDogName(name: string) {
-    this.setName(name);
-  }
+	setDogName(name: string) {
+		this.setName(name);
+	}
 
-  getDogName() {
-    return this.getName;
-  }
+	getDogName() {
+		return this.getName();
+	}
 
-  // Overriding the cry method
-  cry() {
-    this.cry();
-    console.log("*barking sounds*");
-  }
+	// Sobrescribiendo el método cry
+	cry() {
+		super.cry();
+		console.log("*barking sounds*");
+	}
 }
 
 const myDog = new Dog();
 myDog.setDogName("Galaxy Annihilator");
-myDog.cry(); // Output: Galaxy Annihilator makes a sound.\n*barking sounds*
+myDog.cry(); // Output: Galaxy Annihilator makes a sound. \n *barking sounds*
 ```
+
+---
 
 ## Clase 2
 
-Class vs Interface
+### Clase vs Interface
 
-Las clases pueden usar interfaces para definir el contrato de su estructura para su posterior implementación. Sin embargo, las interfaces no pueden implementar métodos ni inicializar variables: sólo pueden definirlos.
-
-Por ejemplo:
+Las **interfaces** definen la forma de los objetos, pero no pueden contener lógica ni inicializar propiedades. Las **clases** pueden implementar interfaces para garantizar que cumplen con un contrato de estructura, además de poder definir lógica interna.
 
 ```typescript
 interface IAnimal {
@@ -80,10 +80,52 @@ class Cat implements IAnimal {
 	}
 }
 
-const myCat = new Cat("Whiskers"); //New es un método propio de las clases
+const myCat = new Cat("Whiskers");
 myCat.cry(); // Whiskers meows.
 ```
 
+---
 
 ## Clase 3
 
+### Funciones en TypeScript
+
+Una **función** es un bloque de código reutilizable que puede recibir parámetros y retornar valores.
+
+```typescript
+const hi = (name: string) => {
+	console.log(`Hello, ${name}!`);
+}
+
+function goodbye(name: string): void {
+	console.log(`Goodbye, ${name}!`);
+}
+
+function show(): void {
+	console.log("This is a function without parameters or return value.");
+}
+```
+
+#### Ejemplo de uso de objetos y destructuración
+
+```typescript
+const response = {
+	status: 200,
+	message: "OK",
+	data: {
+		id: 1,
+		name: "Sample Data"
+	}
+}
+
+function showResponse({status, data}: {status: number, data: {id: number, name: string}}): void {
+	console.log(`Status: ${status}`);
+	console.log(`Data ID: ${data.id}`);
+	console.log(`Data Name: ${data.name}`);
+}
+
+// Destructuración con el operador rest (...)
+const { message, ...rest } = response;
+console.log("Message:", message);
+console.log("Rest:", rest);
+```
