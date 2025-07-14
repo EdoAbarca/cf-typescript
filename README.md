@@ -14,3 +14,4 @@ Este repositorio contiene mis apuntes del "Curso Profesional de TypeScript" prop
 | [Módulo 5](./modulo5/modulo5.md) | Namespace y módulos                                 |
 | [Módulo 6](./modulo6/modulo6.md) | Generics, MappedTypes y UtilityTypes                |
 | [Módulo 7](./modulo7/modulo7.md) | Consideraciones adicionales                         |
+| [Módulo 8](./modulo8/modulo8.md) | TypeScript en Frameworks                            |
