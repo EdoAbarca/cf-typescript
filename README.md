@@ -15,3 +15,9 @@ Este repositorio contiene mis apuntes del "Curso Profesional de TypeScript" prop
 | [Módulo 6](./modulo6/modulo6.md) | Generics, MappedTypes y UtilityTypes                |
 | [Módulo 7](./modulo7/modulo7.md) | Consideraciones adicionales                         |
 | [Módulo 8](./modulo8/modulo8.md) | TypeScript en Frameworks                            |
+
+## Consideraciones
+
+- Los módulos 1 a 6 fueron creados usando una mezcla de bases, considerando el contenido de la clase, interpretaciones y conocimientos propios y la asistencia de la IA para detalles menores
+- Los módulos 7 y 8 fueron creados con IA en su totalidad, se desea poder aportar con creaciones particulares, donde la IA se limite a asistir (y no ser la base de la creación)
+- El curso no abordó la creación de un proyecto particular, mas sí revisó ejemplos de proyectos en los frameworks mencionados (módulo 8), cuyos repositorios no fueros entregados
