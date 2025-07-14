@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:enums": "tsc basics/enums.ts --outdir dist/ && node dist/enums.js",
-    "start:interfaces": "tsc basics/enums.ts --outdir dist/ && node dist/enums.js"
+    "start:interfaces": "tsc basics/interfaces.ts --outdir dist/ && node dist/interfaces.js",
+    "start:types": "tsc basics/types.ts --outdir dist/ && node dist/types.js"
   },
   "keywords": [],
   "author": "",

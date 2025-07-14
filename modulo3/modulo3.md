@@ -46,3 +46,16 @@ let person: Person = {
 }
 
 ```
+
+## Clase 3
+
+Los *custom type* son tipos de datos que permiten combinar datos primitivos o previamente definidos.
+
+```typescript
+type ServiceResponse = string | null | number | undefined;
+type UserType = "SuperUser" | "User" | "Guest";
+
+let response: ServiceResponse;
+
+const myUserType: UserCharges = "SuperUser";
+```
