@@ -12,4 +12,5 @@ Este repositorio contiene mis apuntes del "Curso Profesional de TypeScript" prop
 | [Módulo 3](./modulo3/modulo3.md) | Enum, Interface y Custom Types                      |
 | [Módulo 4](./modulo4/modulo4.md) | Class, Interface y funciones                        |
 | [Módulo 5](./modulo5/modulo5.md) | Namespace y módulos                                 |
+| [Módulo 6](./modulo6/modulo6.md) | Generics, MappedTypes y UtilityTypes                |
 
