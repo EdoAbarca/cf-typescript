@@ -76,4 +76,15 @@ let responseProduct: ResponseTypeService;
 let responsePartner: ResponseTypeService;
 ```
 
-*ResponseTypeService* permite crear nuevos tipos de datos.
+*ResponseTypeService* permite combinar tipos de datos.
+
+
+# Clase 4
+
+```typescript
+let message: any = "";
+let messageUppercase: <string> message;
+messageUppercase.toUpperCase();
+```
+
+Type assertion (Casteo de elementos) en TypeScript permite al desarrollador informar al compilador sobre el tipo específico de una variable en un momento dado. Es útil cuando sabes más sobre el tipo de dato que el propio compilador.
