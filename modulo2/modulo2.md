@@ -58,4 +58,22 @@ let response4: undefined;
 - **undefined**: Indica que una variable ha sido declarada pero aún no se le ha asignado ningún valor. Es el valor por defecto de las variables no inicializadas.
 
 
+# Clase 3
 
+```typescript
+let response5: number | null;
+response5 = 20;
+response5?.toString();
+```
+
+El operador `|` permite definir una variable que puede aceptar más de un tipo de dato, en este caso `number` o `null`. Esto se conoce como un "tipo unión". Es útil cuando una variable puede tener diferentes valores posibles, por ejemplo, un número o la ausencia de valor (`null`).  
+El operador `?.` (encadenamiento opcional) se utiliza para llamar métodos o acceder a propiedades solo si la variable no es `null` ni `undefined`, evitando errores en tiempo de ejecución.
+
+```typescript
+type ResponseTypeService = number | undefined;
+
+let responseProduct: ResponseTypeService;
+let responsePartner: ResponseTypeService;
+```
+
+*ResponseTypeService* permite crear nuevos tipos de datos.

@@ -28,4 +28,11 @@ let response3: null;
 let response4: undefined;
 //let response5: never;
 
-let response5: string | null;
+let response5: number | null;
+response5 = 20;
+response5?.toString();
+
+type ResponseTypeService = number | undefined;
+
+let responseProduct: ResponseTypeService;
+let responsePartner: ResponseTypeService;
